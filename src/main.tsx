@@ -4,7 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom"
-import { RegisterPage, HomePage } from './pages';
+import { RegisterPage, HomePage, ExpenseList } from './pages';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/expenseList",
-    element: <p>In develop</p>,
+    element: <ExpenseList />
+    // element: < />,
   }
 ]);
 
